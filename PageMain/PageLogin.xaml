@@ -10,7 +10,9 @@
 
     <Grid>
         <StackPanel>
-            <Label Content="Введите логин"/>
+            <Label Content="Введите логин" Style="{StaticResource Label}"/>
+            <TextBox Text=" " Style="{StaticResource TextBox}"/>
+            <Label Content="Введите пароль" Style="{StaticResource Label}"/>
         </StackPanel>
     </Grid>
 </Page>
