@@ -43,10 +43,12 @@ namespace ISRPO_Palashicheva_PR12.PageMain
                         case 1:
                             MessageBox.Show("Здравствуйте, Администратор " + userObj.name + "!",
                                 "Уведомление", MessageBoxButton.OK, MessageBoxImage.Information);
+                            AppFrame.frameMain.Navigate(new PageAdmin.PageMenuAdmin());
                             break;
                         case 2:
                             MessageBox.Show("Здравствуйте, Ученик " + userObj.name + "!",
                                 "Уведомление", MessageBoxButton.OK, MessageBoxImage.Information);
+                            AppFrame.frameMain.Navigate(new PageStudent.PageAccountStudent());
                             break;
                     }
                 }

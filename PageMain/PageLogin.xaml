@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:ISRPO_Palashicheva_PR12.PageMain"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="450"
-      Title="PageLogin">
+      Title="Авторизация">
 
     <Grid>
         <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">

@@ -12,19 +12,22 @@
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                 <Label Content="Введите имя" Style="{StaticResource Label}"/>
-                <TextBox Text="" Style="{StaticResource TextBox}"/>
+                <TextBox x:Name="txbName" Text="" Style="{StaticResource TextBox}"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                 <Label Content="Введите логин" Style="{StaticResource Label}"/>
-                <TextBox Text="" Style="{StaticResource TextBox}"/>
+                <TextBox x:Name="txbLogin" Text="" Style="{StaticResource TextBox}"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                 <Label Content="Введите пароль" Style="{StaticResource Label}"/>
-                <PasswordBox Style="{StaticResource PasswordBox}"/>
+                <StackPanel>
+                    <TextBox x:Name="txbPass" Text="" Style="{StaticResource TextBox}"/>
+                    <PasswordBox x:Name="psbPass" Style="{StaticResource PasswordBox}" PasswordChanged="psbPass_PasswordChanged"/>
+                </StackPanel>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                 <Button x:Name="btnBack" Content="Назад" Style="{StaticResource ButtonB}" Click="btnBack_Click"/>
-                <Button Content="Создать" Style="{StaticResource ButtonG}"/>
+                <Button x:Name="btnCreate" Content="Создать" Style="{StaticResource ButtonG}" IsEnabled="False" Click="btnCreate_Click"/>
             </StackPanel>
         </StackPanel>
     </Grid>
