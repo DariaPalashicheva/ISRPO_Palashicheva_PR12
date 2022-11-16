@@ -96,12 +96,19 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PageMain\PageCreateAcc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PageMain\PageLogin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PageMain\PageCreateAcc.xaml.cs">
+      <DependentUpon>PageCreateAcc.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PageMain\PageLogin.xaml.cs">
       <DependentUpon>PageLogin.xaml</DependentUpon>
     </Compile>

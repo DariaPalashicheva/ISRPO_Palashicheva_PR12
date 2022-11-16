@@ -1,4 +1,5 @@
 ﻿using ISRPO_Palashicheva_PR12.ApplicationData;
+using ISRPO_Palashicheva_PR12.PageMain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,6 +27,8 @@ namespace ISRPO_Palashicheva_PR12
             InitializeComponent();
             AppConnect.modelOdb = new FirstEntities(); // подключение к БД
             AppFrame.frameMain = FrmMain; //загрузка фрейма с началом работы программы
+
+            FrmMain.Navigate(new PageLogin()); //подключение во фрейм стартовой страницы авторизации
         }
     }
 }
